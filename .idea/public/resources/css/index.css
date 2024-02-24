@@ -1,5 +1,6 @@
 * {
     font-family: Helvetica, sans-serif;
+    letter-spacing: .125rem;
 }
 
 body {
@@ -42,8 +43,16 @@ a {
     margin-right: auto;
 }
 
+.header {
+    text-align: center;
+}
+
 .footer {
     padding: 125px 0;
+}
+
+.navigation {
+    min-height: 50px;
 }
 
 .footertitle {
@@ -69,7 +78,7 @@ button {
     font-size: 14px;
     font-family: Helvetica, sans-serif;
     transition-duration: 0.3s;
-    width: 24%;
+    width: 24.5%;
 }
 
 button:hover {
