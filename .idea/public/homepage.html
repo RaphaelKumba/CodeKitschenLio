@@ -12,7 +12,7 @@
       }
 
       footer {
-          min-height: 150px;
+          min-height: 250px;
           margin: auto;
       }
 
@@ -45,11 +45,10 @@
           padding: 15px 32px;
           text-align: center;
           text-decoration: none;
-          display: inline-block;
           font-size: 14px;
           font-family: Helvetica, sans-serif;
           transition-duration: 0.3s;
-          width: 33%;
+          width: 24%;
       }
 
       button:hover {
@@ -62,6 +61,24 @@
           margin-left: auto;
           margin-right: auto;
       }
+
+      .footer {
+          padding: 125px 0;
+      }
+
+      .footertitle {
+          text-align: center;
+          font-size: 25px;
+          font-family: Helvetica, sans-serif;
+      }
+
+      .footermail {
+          text-align: center;
+          padding-top: 25px;
+          font-size: 17px;
+          font-family: Helvetica, sans-serif;
+      }
+
     </style>
 </head>
 
@@ -69,6 +86,7 @@
     <button type="button"><a href="#OurMission">OUR MISSION</a></button>
     <button type="button"><a href="#Pictures">PICTURES</a></button>
     <button type="button"><a href="#HelpUs">DONATE</a></button>
+    <button type="button"><a href="#Contact">CONTACT</a></button>
 </div>
 
 <div class="header">
@@ -88,14 +106,17 @@
         some text
     </p>
 
-    <h2 id="HelpUs">Help Us</h2>
+    <h2 id="HelpUs">Donate</h2>
     <p>
         some text
     </p>
 </body>
 
 <footer>
-    <div class="footer.mail">Email: lionel@email.com</div>
+    <div class="footer">
+        <div class="footertitle"><strong>CONTACT US</strong></div>
+        <div id="Contact" class="footermail"><u>email@adress.com</u></div>
+    </div>
 </footer>
 
 </html>
