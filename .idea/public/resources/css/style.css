@@ -1,5 +1,5 @@
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: "ARIAL", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -17,19 +17,16 @@ footer {
 h1 {
     font-size: 80px;
     font-weight: 800;
-    font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
 h2 {
     font-size: 50px;
     font-weight: 800;
-    font-family: Helvetica, sans-serif;
 }
 
 p {
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
     text-align: justify;
 }
 
@@ -42,6 +39,7 @@ a {
     width: 100%;
     height: 100px;
     display: block;
+    background-color: aliceblue;
 }
 
 .navigation {
@@ -62,68 +60,67 @@ a {
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    justify-items: center;
 }
 
 .footer {
     padding: 125px 0;
+    background-color: aliceblue;
 }
 
 .footertitle {
     text-align: center;
     font-size: 25px;
-    font-family: Helvetica, sans-serif;
 }
 
 .footermail {
     text-align: center;
     padding-top: 25px;
     font-size: 17px;
-    font-family: Helvetica, sans-serif;
-}
-
-.donate-center {
-        margin: auto;
-        width: 25%;
-        padding: 10px;
 }
 
 .donate-button {
+    display: block;
+    margin: auto;
     width: 250px;
     height: 50px;
     background-color: #444444;
     border: none;
     border-radius: 8px;
     color: white;
+    transition-duration: 250ms;
 }
 
 .donate-button:hover {
-    width: 250px;
-    height: 50px;
-    background-color: #444444;
-    border: none;
-    border-radius: 8px;
-    color: white;
+    font-size: 16px;
 }
 
 .centered-text {
     text-align: center;
 }
 
+.persons {
+    justify-items: center;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+}
+
 .person-story-text {
-    float: right;
-    max-width: 70%;
-    padding-top: 55px;
+    margin: 40px;
+    flex-grow: 1;
     text-align: left;
+    margin-bottom: 100px;
 }
 
 .person-story-image {
-    max-width: 25%;
     max-height: 250px;
     border-radius: 100%;
-    padding-block-start: 25px;
+}
+
+.vertical-blank-spacer {
+    min-height: 50px;
 }
 
 .custom-image-thing {
