@@ -4,20 +4,7 @@
     <meta charset="UTF-8">
     <title>TheMulengaFarm</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
-    <script>
-        const track = document.getElementById("image-track")
-
-        window.onmousedown = e => {
-            track.dataset.mouseDownAt = e.clientX;
-        }
-        window.onmousemove = e => {
-            if(track.dataset.mouseDownAt === '0') return;
-            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
-            maxDelta = window.innerWidth / 2;
-            const percentage = (mouseDelta / maxDelta) * 100;
-            track.style.transform = `translate(${percentage})`;
-        }
-    </script>
+    <script src="./resources/js/script.js"></script>
 </head>
 
 <div class="navigation">
@@ -93,7 +80,7 @@
 
     <h2>Pictures</h2>
     <div class="custom-image-thing">
-        <div id="image-track" data-mouse-down-at="0">
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
             <img class="fotos" src="./resources/img/ctc/ctc-plans-1.png" draggable="false">
             <img class="fotos" src="./resources/img/ctc/ctc-before.jpg" draggable="false">
             <img class="fotos" src="./resources/img/ctc/ctc-build-1.jpg" draggable="false">
