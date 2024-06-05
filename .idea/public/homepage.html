@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <title>TheMulengaFarm</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <script>
+        const track = document.getElementById("image-track")
+
+        window.onmousedown = e => {
+            track.dataset.mouseDownAt = e.clientX;
+        }
+        window.onmousemove = e => {
+            if(track.dataset.mouseDownAt === '0') return;
+            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX;
+            maxDelta = window.innerWidth / 2;
+            const percentage = (mouseDelta / maxDelta) * 100;
+            track.style.transform = `translate(${percentage})`;
+        }
+    </script>
 </head>
 
 <div class="navigation">
     <button type="button"><a href="#OurMission">OUR MISSION</a></button>
-    <button type="button"><a href="#Pictures">PICTURES</a></button>
     <button type="button"><a href="#HelpUs">DONATE</a></button>
     <button type="button"><a href="#Contact">CONTACT</a></button>
 </div>
@@ -45,12 +58,51 @@
                 fantastic first step into a more grounded world!
             </p>
         </div>
+
+        <img class="person-story-image" src="./resources/img/peoples/Portrait_Jameson.jpg">
+        <div class="person-story-text">
+            <h3>Jameson</h3>
+            <p>
+                I'm passionate about my sustainable farming career and I love transforming communities,
+                especially the less privileged people in society, through skills training.
+                I have a calling in farming, and I look forward to establishing God's kingdom through
+                farming God's way. I believe if we look after nature, nature will look after us.<br>
+            </p>
+        </div>
+        <p>
+            We met in Zambia in 2018. Although we only saw each other for 3 days, we have maintained a
+            fulfilling friendship ever since. Jameson's vision of bringing nature and people together,
+            building a professional commercial farm and thereby transforming communities and the agricultural
+            sector has inspired me (Lionel) ever since. It is effective action to contribute to a positive
+            development and a more human-looking future.<br><br>
+
+            Jameson has been working on various farms since 2017. In doing so, he passes on the knowledge of his
+            own seed production, the use of compost and reuse as well as organic and natural pest control methods.
+            <br><br>
+
+            In 2024, we spent a month together and implemented the next steps of TheMulengaFarm together.
+            TheCommunityTraining Centre is currently under construction and the field work and tree nursery
+            are in full swing. Every week, 3 to 4 friends and neighbors accompany Jameson at work, sharing knowledge,
+            skills, and faith.<br><br>
+
+            Currently growing: 1500 Citrus-tree (mango, avocado, oranges, lemon, etc.), Maize
+            (open-pollinated variety, OPV) and all kinds of vegetables, including seed production.
+            Chili production and poultry (100)<br><br>
+        </p>
     </div>
 
-    <h2 id="Pictures">Pictures</h2>
-    <p>
-        some text
-    </p>
+    <h2>Pictures</h2>
+    <div class="custom-image-thing">
+        <div id="image-track" data-mouse-down-at="0">
+            <img class="fotos" src="./resources/img/ctc/ctc-plans-1.png" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-before.jpg" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-build-1.jpg" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-build-2.jpg" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-build-3.jpg" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-build-4.jpg" draggable="false">
+            <img class="fotos" src="./resources/img/ctc/ctc-after.jpg" draggable="false">
+        </div>
+    </div>
 
     <h2 id="HelpUs">Donate</h2>
     <p class="centered-text">

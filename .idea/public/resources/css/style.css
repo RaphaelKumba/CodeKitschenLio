@@ -49,7 +49,7 @@ button {
     font-size: 14px;
     font-family: Helvetica, sans-serif;
     transition-duration: 0.3s;
-    width: 24%;
+    width: 33%;
 }
 
 button:hover {
@@ -110,14 +110,38 @@ button:hover {
 
 .person-story-text {
     float: right;
-    max-width: 75%;
-    overflow: hidden;
+    max-width: 70%;
+    padding-top: 55px;
     text-align: left;
-    height:250px;
 }
 
 .person-story-image {
     max-width: 25%;
     max-height: 250px;
     border-radius: 100%;
+    padding-block-start: 25px;
+}
+
+.custom-image-thing {
+    background-color: lightgrey;
+    height: 100vh;
+    width: 100vw;
+    margin: 0rem;
+    overflow: hidden;
+}
+
+#image-track > .fotos {
+    width:40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolut;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, 0%);
 }
