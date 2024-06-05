@@ -1,11 +1,10 @@
 * {
     font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    padding: 25px;
     margin: auto;
-    max-width: 1000px;
     background-color: white;
     font-weight: lighter;
 }
@@ -39,22 +38,27 @@ a {
     text-decoration: none;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    color: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: Helvetica, sans-serif;
-    transition-duration: 0.3s;
-    width: 33%;
+.header {
+    width: 100%;
+    height: 100px;
+    display: block;
 }
 
-button:hover {
-    font-size: 17px;
-    padding: 12px 29px;
+.navigation {
+    width: 33%;
+    height: 100%;
+    background-color: transparent;
+    border: transparent;
+    transition-duration: 250ms;
+}
+.navigation:hover {
+    font-size: 16px;
+}
+
+.main-content {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center {
