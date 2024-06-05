@@ -1,5 +1,6 @@
 * {
     font-family: Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -16,12 +17,14 @@ footer {
 
 h1 {
     font-size: 80px;
+    font-weight: 800;
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 50px;
+    font-weight: 800;
     font-family: Helvetica, sans-serif;
 }
 
@@ -34,6 +37,24 @@ p {
 a {
     color: black;
     text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    transition-duration: 0.3s;
+    width: 24%;
+}
+
+button:hover {
+    font-size: 17px;
+    padding: 12px 29px;
 }
 
 .center {
@@ -59,20 +80,30 @@ a {
     font-family: Helvetica, sans-serif;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    color: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: Helvetica, sans-serif;
-    transition-duration: 0.3s;
-    width: 24%;
+.donate-center {
+        margin: auto;
+        width: 25%;
+        padding: 10px;
 }
 
-button:hover {
-    font-size: 17px;
-    padding: 12px 29px;
+.donate-button {
+    width: 250px;
+    height: 50px;
+    background-color: #444444;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.donate-button:hover {
+    width: 250px;
+    height: 50px;
+    background-color: #444444;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.centered-text {
+    text-align: center;
 }
