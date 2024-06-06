@@ -15,7 +15,7 @@ footer {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 150px;
     font-weight: 800;
     text-align: center;
 }
@@ -53,15 +53,30 @@ a {
     font-size: 16px;
 }
 
+.page-title {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title-text {
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: Black;
+}
+
+.title-image {
+    margin: auto;
+    justify-items: center;
+}
+
 .main-content {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.center {
-    margin: auto;
-    justify-items: center;
 }
 
 .footer {
@@ -153,11 +168,13 @@ a {
 
 .fade-in-image {
     width: 33%;
+    max-height: 350px;
+    object-fit: cover;
     scale: .8;
     opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range: 250px 500px;
+    animation-range: 0px 500px;
 }
 
 @keyframes fade-in {
