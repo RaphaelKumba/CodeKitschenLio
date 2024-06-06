@@ -143,3 +143,25 @@ a {
     top: 50%;
     transform: translate(0%, 0%);
 }
+
+.fading-images {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+
+.fade-in-image {
+    width: 33%;
+    scale: .8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    to {scale: 1; opacity: 1;}
+}
