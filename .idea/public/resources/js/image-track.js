@@ -16,7 +16,7 @@ window.onload = function() {
         const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
             maxDelta = window.innerWidth/4;
 
-        const percentage = (mouseDelta / maxDelta) * -100,
+        let percentage = (mouseDelta / maxDelta) * -100,
             nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
         if (nextPercentage > 0) nextPercentage = 0;
         if (nextPercentage < -100) nextPercentage = -100;
@@ -36,4 +36,39 @@ window.onload = function() {
             }, { duration: 1200, fill: "forwards" });
         }
     }
+
+
+
+    let carousels = document.getElementsByClassName('image-carousel');
+
+    [].forEach.call(carousels, function(c) {
+        let next = c.getElementsByClassName('next')[0],
+            prev = c.getElementsByClassName('prev')[0],
+            bubbles = c.getElementsByClassName('bubbles')[0],
+            inner = c.getElementsByClassName('inner')[0],
+            imgs = c.getElementsByTagName('img'),
+            currentImageindex = 0,
+            width = 640;
+
+        function switchImg() {
+            inner.style.left = -width * currentImageindex + 'px';
+        }
+
+        next.addEventListener('click', function () {
+            currentImageindex++;
+            if (currentImageindex >= imgs.length) {
+                currentImageindex = 0;
+            }
+            switchImg();
+        });
+
+        prev.addEventListener('click', function () {
+            currentImageindex--;
+            if (currentImageindex < 0) {
+                currentImageindex = imgs.length - 1;
+            }
+            switchImg();
+        });
+    });
+
 };
