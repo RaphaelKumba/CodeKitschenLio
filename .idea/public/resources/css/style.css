@@ -218,7 +218,35 @@ a {
     width: 640px;
     height: 480px;
     overflow: hidden;
+    position: relative;
+
     .inner {
         display: flex;
+        position: absolute;
+        left: -640px;
+    }
+
+    .next::after, .prev::after {
+        content: '>';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 1em;
+        height: 3em;
+        font-weight: bold;
+        background-color: transparent;
+        traansform: translateY(-50%);
+        line-height: 3em;
+        font-size: 16;
+        transition: font-size 0.5s linear;
+    }
+
+    .prev::after {
+        content: '<';
+        left: 0;
+    }
+
+    .next:hover::after, .prev:hover::after {
+        font-size: 20;
     }
 }
