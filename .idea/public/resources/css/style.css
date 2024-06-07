@@ -213,3 +213,12 @@ a {
     100% { opacity: 1; }
     to {scale: 1; opacity: 1;}
 }
+
+.image-carousel {
+    width: 640px;
+    height: 480px;
+    overflow: hidden;
+    .inner {
+        display: flex;
+    }
+}
