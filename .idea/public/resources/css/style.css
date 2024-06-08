@@ -217,7 +217,7 @@ a {
 .image-carousel {
     width: 640px;
     height: 480px;
-    overflow: hidden;
+    object-fit: cover;
     position: relative;
 
     .inner {
