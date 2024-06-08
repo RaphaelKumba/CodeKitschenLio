@@ -234,7 +234,6 @@ a {
             display: flex;
             position: absolute;
             left: -640px;
-            transition: opacity .5s, transform .5s;
 
             .img-carousel {
                 width: 640px;
@@ -245,20 +244,26 @@ a {
     }
 
     .next::after, .prev::after {
-        font-size: 100px;
+        font-size: 80px;
         content: '>';
         position: absolute;
         right: 0;
         width: 1em;
         height: 1em;
         background-color: transparent;
-        transform: translate(-500px, 180px);
+        transform: translate(-100px, 200px);
+        color: lightgrey;
+        transition: color .4s linear;
     }
 
     .prev::after {
         content: '<';
         left: 0;
-        transform: translate(500px, 180px);
+        transform: translate(100px, 200px);
+    }
+
+    .prev:hover::after, .next:hover::after {
+        color: black;
     }
 
 }
