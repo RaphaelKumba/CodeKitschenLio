@@ -221,6 +221,7 @@ a {
     margin: auto;
     overflow: hidden;
     position: relative;
+    transition-duration: 1.5s;
 
     .carousel-wrapper {
         display: flex;
@@ -229,11 +230,13 @@ a {
         height: 480px;
         overflow: hidden;
         position: relative;
+        transition: 5s ease-out 5s ease-in 1s ease-in-out;
 
         .inner {
             display: flex;
             position: absolute;
             left: -640px;
+            transition-duration:  1.5s;
 
             .img-carousel {
                 width: 640px;
