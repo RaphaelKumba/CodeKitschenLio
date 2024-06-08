@@ -169,6 +169,11 @@ a {
     min-height: 50px;
 }
 
+
+
+
+
+
 .custom-image-thing {
     margin: 0rem;
     overflow: hidden;
@@ -189,6 +194,11 @@ a {
     top: 50%;
     transform: translate(0%, 0%);
 }
+
+
+
+
+
 
 .fading-images {
     max-width: 100%;
@@ -213,6 +223,10 @@ a {
     100% { opacity: 1; }
     to {scale: 1; opacity: 1;}
 }
+
+
+
+
 
 
 
@@ -270,3 +284,23 @@ a {
     }
 
 }
+
+
+
+.image-container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 70vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+
