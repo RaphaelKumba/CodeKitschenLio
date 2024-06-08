@@ -214,40 +214,51 @@ a {
     to {scale: 1; opacity: 1;}
 }
 
+
+
 .image-carousel {
-    width: 640px;
-    height: 480px;
-    object-fit: cover;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
     position: relative;
 
-    .inner {
+    .carousel-wrapper {
         display: flex;
-        position: absolute;
-        left: -640px;
+        margin: auto;
+        width: 640px;
+        height: 480px;
+        overflow: hidden;
+        position: relative;
+
+        .inner {
+            display: flex;
+            position: absolute;
+            left: -640px;
+            transition: opacity .5s, transform .5s;
+
+            .img-carousel {
+                width: 640px;
+                height: 480px;
+                object-fit: cover;
+            }
+        }
     }
 
     .next::after, .prev::after {
+        font-size: 100px;
         content: '>';
         position: absolute;
-        top: 50%;
         right: 0;
         width: 1em;
-        height: 3em;
-        font-weight: bold;
-        background-color: white;
-        traansform: translateY(-50%);
-        line-height: 3em;
-        cursor: pointer;
-        opacity: 0.25;
-        transition: opacity 0.5s linear;
+        height: 1em;
+        background-color: transparent;
+        transform: translate(-500px, 180px);
     }
 
     .prev::after {
         content: '<';
         left: 0;
+        transform: translate(500px, 180px);
     }
 
-    .next:hover::after, .prev:hover::after {
-        opacity: 1;
-    }
 }
