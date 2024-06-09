@@ -110,20 +110,26 @@ a {
     margin-right: auto;
 }
 
-.footer {
-    padding: 125px 0;
+footer {
+    padding: 50px;
     background-color: aliceblue;
 }
 
 .footertitle {
     text-align: center;
     font-size: 25px;
+    padding: 25px;
 }
 
-.footermail {
+.socials {
     text-align: center;
-    padding-top: 25px;
-    font-size: 17px;
+    margin: auto;
+    padding: 20px;
+}
+
+.fa {
+    margin: auto;
+    width: 80px;
 }
 
 .donate-button {
