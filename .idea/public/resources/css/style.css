@@ -296,7 +296,7 @@ footer {
 .image-container {
     display: flex;
     width: 100%;
-    padding: 4% 2%;
+    padding: 1% 1%;
     box-sizing: border-box;
     height: 70vh;
 }
@@ -305,7 +305,7 @@ footer {
     flex: 1;
     overflow: hidden;
     transition: .5s;
-    margin: 0 2%;
+    margin: 0 1%;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
     line-height: 0;
 }
@@ -363,15 +363,36 @@ footer {
 
     .smaller {
         max-width: 25%;
+        margin: auto;
     }
 
     .bigger {
         max-width: 50%;
+        margin: auto;
     }
 
     .the-img {
-        overflow: hidden;
         object-fit: cover;
     }
-
 }
+
+.smali {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.biggi {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.smali:hover, .biggi:hover {
+    width: 350px;
+    transition: .5s;
+}
+
