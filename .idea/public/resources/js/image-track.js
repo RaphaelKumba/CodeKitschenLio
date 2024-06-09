@@ -71,4 +71,15 @@ window.onload = function() {
         });
     });
 
+
+    let rotators = document.getElementsByClassName('rotators');
+
+    [].forEach.call(rotators, function(f) {
+        id = f.getElementsByClassName('rotate-thing')[0];
+
+        id.addEventListener('click', function () {
+           id.style.width = '50px';
+        });
+    });
+
 };
