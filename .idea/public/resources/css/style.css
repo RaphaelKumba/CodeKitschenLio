@@ -320,24 +320,28 @@ a {
 }
 
 
+
+
 .morer-images {
-    gap: 10px;
+    box-shadow: 10px 20px 30px rgba(0,0,0,.3);
 }
 
 .morer-wrapper {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    display: flex;
 }
 
-.morer-wrapper img {
-    width: 33%;
+.img-wrapper:hover {
+    width: 50%;
+    transition: .5s;
+}
+
+.img-wrapper {
+    width: 34%;
     height: 300px;
     margin: auto;
     overflow: hidden;
     object-fit: cover;
-    opacity: .8;
-}
-
-.morer-wrapper:hover > img {
-    opacity: 1;
+    transition: .5s;
 }
