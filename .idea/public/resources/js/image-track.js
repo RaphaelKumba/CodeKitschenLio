@@ -75,10 +75,21 @@ window.onload = function() {
     let rotators = document.getElementsByClassName('rotators');
 
     [].forEach.call(rotators, function(f) {
-        id = f.getElementsByClassName('rotate-thing')[0];
+        id1 = f.getElementsByClassName('rotate')[0];
+        id2 = f.getElementsByClassName('rotate')[1];
+        id3 = f.getElementsByClassName('rotate')[2];
 
-        id.addEventListener('click', function () {
-           id.style.width = '50px';
+
+        id1.addEventListener('click', function () {
+           id1.style.width = '50px';
+        });
+
+        id2.addEventListener('click', function () {
+            id2.style.width = '50px';
+        });
+
+        id3.addEventListener('click', function () {
+            id3.style.width = '50px';
         });
     });
 
